@@ -167,7 +167,7 @@ def print_results(rc, data, from_cache):
     console.print(
         Panel(
             Align.center(
-                "Made with ♥ by Vehicle Intelligence\nInstagram: DarkByteHunter",
+                "Made with ♥ by DarkByteHunter\nInstagram: DarkByteHunter",
                 vertical="middle",
             ),
             style="blue",
