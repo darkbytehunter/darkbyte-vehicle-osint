@@ -1,3 +1,11 @@
-requests
-rich
+# HTTP Client Library
+httpx>=0.25.0
 
+# Data Validation & Parsing
+pydantic>=2.0.0
+
+# Terminal UI & Formatting
+rich>=13.0.0
+
+# Optional: Synchronous fallback library (if using the standard requests version)
+requests>=2.31.0
