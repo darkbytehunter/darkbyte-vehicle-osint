@@ -1,144 +1,249 @@
-# 🚗 Vehicle Intelligence – Vehicle Info Lookup 
-[![GitHub stars](https://img.shields.io/github/stars/darkbytehunter/darkbyte-vehicle-osint)](https://github.com/darkbytehunter/darkbyte-vehicle-osint.git)
-[![YouTube](https://img.shields.io/badge/YouTube-DarkByteHunter-red)](https://www.youtube.com/@DarkByteHunter)
-[![Instagram](https://img.shields.io/badge/Instagram-DarkByteHunter-purple)](https://www.instagram.com/darkbytehunter)
-### 🔥 Created by **DarkByteHunter**  
-### 🎯 A Professional OSINT Tool To Fetch Indian Vehicle Registration Information
+<div align="center">
+
+# 🚗 Vehicle Intelligence
+
+### Professional OSINT Tool for Indian Vehicle Registration Lookup
+
+A lightweight, cross-platform Python application for retrieving **publicly available Indian vehicle registration information** through a simple terminal interface.
+
+<p>
+
+![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Platform](https://img.shields.io/badge/Platform-Windows%20|%20Linux%20|%20Termux-success?style=for-the-badge)
+![OSINT](https://img.shields.io/badge/Category-OSINT-blue?style=for-the-badge)
+![Stars](https://img.shields.io/github/stars/darkbytehunter/darkbyte-vehicle-osint?style=for-the-badge)
+![Issues](https://img.shields.io/github/issues/darkbytehunter/darkbyte-vehicle-osint?style=for-the-badge)
+
+</p>
+
+<p>
+
+<a href="https://github.com/darkbytehunter/darkbyte-vehicle-osint">Repository</a> •
+<a href="#installation">Installation</a> •
+<a href="#usage">Usage</a> •
+<a href="#features">Features</a>
+
+</p>
+
+</div>
 
 ---
 
-## 📌 About  
-Vehicle Intelligence – Vehicle Info Lookup is a professional OSINT tool created for educational and cybersecurity research purposes.Using a publicly available API, the tool fetches detailed information about an Indian Vehicle using its registration number and displays the output in a beautiful colored interface.
+# 📖 Overview
+
+Vehicle Intelligence is an **Open Source Intelligence (OSINT)** utility developed for **educational, cybersecurity, and research purposes**.
+
+The application queries publicly available vehicle information and displays it through a clean terminal interface built with **Rich**.
+
+This project demonstrates:
+
+- Python scripting
+- API integration
+- Terminal UI development
+- Responsible OSINT techniques
 
 ---
 
-## ⚙️ Features  
-✔ Auto clears screen on run  
-✔ Professional banner & disclaimer  
-✔ Fetches real data via public API  
-✔ Beautiful colored output using Rich  
-✔ Error handling included  
-✔ Works on Windows, Termux & Linux  
-✔ Beginner-friendly clean source code
+# ✨ Features
+
+- 🚀 Fast vehicle lookup
+- 🎨 Beautiful Rich terminal interface
+- ⚡ Lightweight and beginner friendly
+- 🧹 Auto-clears terminal
+- 🛡️ Error handling
+- 🔍 Public data lookup
+- 💻 Cross-platform support
+- 📚 Clean, readable source code
 
 ---
 
-## ⚠️ Legal Disclaimer  
-This tool is strictly for:
+# 💻 Supported Platforms
 
-- Ethical research  
-- Cyber awareness  
-- OSINT investigations  
-- Educational demonstrations  
-
-Unauthorized use, privacy violation, cybercrime, or misuse of this tool is completely illegal.  
-The user is solely responsible for their actions.
+| Platform | Status |
+|----------|--------|
+| Windows | ✅ |
+| Kali Linux | ✅ |
+| Ubuntu | ✅ |
+| Debian | ✅ |
+| Arch Linux | ✅ |
+| Parrot OS | ✅ |
+| Termux | ✅ |
 
 ---
 
-### Supported Platforms
-- **Termux** �
-- **Windows** 🌱
-- **Kali Linux** 🐧
-- **Ubuntu/Debian** 🌱
-- **Parrot OS** 🕵️‍♂️
-- **Arch Linux** �
+# 📂 Project Structure
+
+```text
+Vehicle-Intelligence
+│
+├── vehicle_lookup.py
+├── requirements.txt
+├── README.md
+└── LICENSE
+```
+
 ---
-## Windows 10/11 Installation (PowerShell)  
 
-> **Step-by-step for beginners — no prior knowledge needed!**
+# ⚙️ Installation
 
-### Step 1: Install Python  
-1. Go to: [https://www.python.org/downloads/](https://www.python.org/downloads/)  
-2. Click **"Download Python 3.12"** (or latest)  
-3. Run the installer  
-4. **CHECK THIS BOX**: `Add Python to PATH`  
-5. Click **"Install Now"**  
-6. Wait → Finish  
+## Windows
 
-> Verify: Open **PowerShell** → Type:  
-`Python --version`
-Should show: Python 3.12.x
-
-### Step 2: Install Git  
-1. Go to: [https://git-scm.com/download/win](https://git-scm.com/download/win)  
-2. Click **"Download "** (or latest)  
-3. Run the installer    
-4. Wait → Finish  
-
-> Verify: Open **PowerShell** → Type:  
-`Git --version`
-Should show: Git 2.51.x
-## Step 3: type in power shell �
 ```bash
 git clone https://github.com/darkbytehunter/darkbyte-vehicle-osint.git
+
 cd darkbyte-vehicle-osint
 
-# requirements 
 pip install -r requirements.txt
 
-# run script
 python vehicle_lookup.py
 ```
-## Installation 🛠️
-## 🐧 Linux & Termux Setup (Kali/Ubuntu/Debian)
+
+---
+
+## Linux / Kali / Ubuntu / Debian
+
 ```bash
-#In termux remove sudo
 sudo apt update
+
 git clone https://github.com/darkbytehunter/darkbyte-vehicle-osint.git
+
 cd darkbyte-vehicle-osint
 
-# requirements 
 pip install -r requirements.txt
 
-# run script
+python3 vehicle_lookup.py
+```
+
+---
+
+## Termux
+
+```bash
+pkg update
+
+pkg install python git
+
+git clone https://github.com/darkbytehunter/darkbyte-vehicle-osint.git
+
+cd darkbyte-vehicle-osint
+
+pip install -r requirements.txt
+
 python vehicle_lookup.py
 ```
----
-
-## Intended Uses
-
-- Ethical OSINT training  
-- Cybersecurity workshops  
-- Personal number verification  
-- Red team research (with permission)  
 
 ---
 
-## Prohibited Uses
+# 🚀 Usage
 
-- Unauthorized data access  
-- Privacy invasion or doxxing  
-- Illegal surveillance  
-- Commercial redistribution  
-- Cracking or bypassing license  
+Run the application:
 
----
+```bash
+python vehicle_lookup.py
+```
 
-## ⚠️ Disclaimer
-This tool is intended **only for educational and lawful use** on devices **you own** or have **explicit permission** to manage. The creator and contributors are **not responsible** for any misuse.  
-Stay ethical — **Vehicle Intelligence** community promotes **learning & safety**, not harm.
+Enter a valid Indian vehicle registration number when prompted.
 
 ---
 
-👨‍💻 **Author**  
-- Made with ❤️ by **DarkByteHunter** 
-- Name: **DarkByteHunter**  
-- YouTube: [🔥 Vehicle Intelligence](https://www.youtube.com/@DarkByteHunter)
+# 📸 Screenshot
+
+> Replace this section with a real terminal screenshot.
+
+```
+Enter Registration Number
+
+AP39AB1234
+
+Owner
+
+Vehicle Class
+
+Fuel Type
+
+Registration Date
+
+Registration Authority
+
+Status
+```
 
 ---
-## 📌 Contact Me  
 
-<a href="https://youtube.com/@DarkByteHunter">
-  <img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube">
-</a>  
-<br>  
+# 🎯 Intended Use
 
-<a href="https://github.com/darkbytehunter?tab=repositories">
-  <img src="https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
-</a>  
-<br>  
+This project is suitable for:
 
-<a href="https://whatsapp.com/channel/0029VbD4P3q8V0tuvIq4tg2L">
-  <img src="https://img.shields.io/badge/WhatsApp-F77737?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp Channel">
-</a>
+- Cybersecurity education
+- OSINT learning
+- API integration practice
+- Python programming practice
+- Research demonstrations
+
+---
+
+# ⚠️ Legal Disclaimer
+
+This software accesses information from publicly available sources.
+
+It is intended **only for lawful educational, research, and cybersecurity purposes**.
+
+Users are responsible for complying with all applicable laws and respecting privacy. The author and contributors are not responsible for misuse.
+
+---
+
+# 🤝 Contributing
+
+Contributions are welcome.
+
+If you have ideas for improvements:
+
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Open a Pull Request
+
+---
+
+# 🛣️ Roadmap
+
+- [x] Vehicle lookup
+- [x] Rich terminal UI
+- [x] Cross-platform support
+- [ ] Export results to JSON
+- [ ] Export results to CSV
+- [ ] Multiple API providers
+- [ ] Interactive menu
+- [ ] Automatic updates
+
+---
+
+# 👨‍💻 Author
+
+**DarkByteHunter**
+
+GitHub
+
+https://github.com/darkbytehunter
+
+YouTube
+
+https://youtube.com/@DarkByteHunter
+
+Instagram
+
+https://instagram.com/darkbytehunter
+
+WhatsApp Channel
+
+https://whatsapp.com/channel/0029VbD4P3q8V0tuvIq4tg2L
+
+---
+
+<div align="center">
+
+### ⭐ If you found this project useful, consider starring the repository.
+
+Made with ❤️ using Python
+
+</div>
